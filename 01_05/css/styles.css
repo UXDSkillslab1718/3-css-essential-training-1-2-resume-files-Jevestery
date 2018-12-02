@@ -1,3 +1,64 @@
+/* colors
+#000000 = black
+#33202A = brownish grey
+#5F5566 = middle grey
+#80ADA0 = olive green
+#8AEA92 = green, accent
+#CCE5CC = light green
+#3F6B43 = dark green
+*/
+
+
+/*----------------------------
+Glabal styles
+----------------------------*/
+
 body {
-  background: lightblue;
+  background: #5F5566;
+}
+
+h1 {
+  color: white;
+}
+
+/*----------------------------
+Header and Footer
+----------------------------*/
+
+header, footer {
+  background: #33202A;
+  color: #CCE5CC;
+}
+
+header h2, footer h2 {
+  color: white;
+}
+
+a {
+  color: #8AEA92;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  color: #80ADA0;
+}
+
+
+/*----------------------------
+Work
+----------------------------*/
+
+.work {
+  background: #80ADA0;
+}
+
+/*----------------------------
+Education
+----------------------------*/
+
+.education {
+  background: #8AEA92;
 }
