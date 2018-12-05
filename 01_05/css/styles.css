@@ -2,7 +2,7 @@
 #000000 = black
 #33202A = brownish grey
 #5F5566 = middle grey
-#80ADA0 = olive green
+#83c6b3 = olive green
 #8AEA92 = green, accent
 #CCE5CC = light green
 #3F6B43 = dark green
@@ -15,10 +15,31 @@ Glabal styles
 
 body {
   background: #5F5566;
+  font-family: pragmatica, Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 h1 {
+  font-size: 30px;
   color: white;
+}
+
+h2 {
+  font-size: 27px;
+  text-decoration: underline;
+}
+
+h1, h2 {
+  text-align: center;
+  font-family: century-gothic, Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+p {
+    font-size: 17px;
+    line-height: 1.5;
 }
 
 /*----------------------------
@@ -32,6 +53,14 @@ header, footer {
 
 header h2, footer h2 {
   color: white;
+}
+
+footer {
+  text-align: center;
+}
+
+footer, a {
+  font-size: 20px;
 }
 
 a {
@@ -52,7 +81,7 @@ Work
 ----------------------------*/
 
 .work {
-  background: #80ADA0;
+  background: #83c6b3;
 }
 
 /*----------------------------
