@@ -39,6 +39,10 @@ h2 {
   margin-bottom: 30px;
 }
 
+h3 {
+  margin-bottom: 10px;
+}
+
 h1, h2 {
   text-align: center;
   font-family: century-gothic, Arial, sans-serif;
@@ -140,6 +144,15 @@ Work
   width: 50%;
   float: left;
   padding: 0 50px;
+  min-height: 950px;
+}
+
+.work h3 ~ p {
+  margin: 0;
+}
+
+.work-section p:last-of-type {
+  margin-bottom: 50px;
 }
 
 /*----------------------------
@@ -156,5 +169,13 @@ Education
   width: 50%;
   float: left;
   padding: 0 50px;
-  min-height: 981px;
+  min-height: 950px;
+}
+
+.education h3 ~ p {
+  margin: 0;
+}
+
+.education-section p:last-of-type {
+  margin-bottom: 50px;
 }
