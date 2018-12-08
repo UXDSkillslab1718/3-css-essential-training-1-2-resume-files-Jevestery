@@ -6,6 +6,7 @@
 #8AEA92 = green, accent
 #CCE5CC = light green
 #3F6B43 = dark green
+#664C59 = nav bar grey
 */
 
 
@@ -65,6 +66,11 @@ p {
 /*----------------------------
 Header and Footer
 ----------------------------*/
+
+header {
+  padding-top: 65px;
+  position: relative;
+}
 
 header, footer {
   background: #33202A;
@@ -127,6 +133,46 @@ a:hover {
 
 a:active {
   color: #80ADA0;
+}
+
+.download-button {
+  background: #5F5566;
+  padding: 5px 10px;
+  text-decoration: none;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+
+/*----------------------------
+Nav Bar
+----------------------------*/
+
+.nav-bar {
+  background: #513c47;
+}
+
+nav {
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+nav a {
+  display: inline-block;
+  min-width: 170px;
+  padding: 10px 30px;
+  margin: 15px 0;
+  border: 1px #83c6b3 solid;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+nav a:hover {
+  background: #664C59;
 }
 
 
