@@ -121,6 +121,7 @@ footer h2 {
   margin-top: 10px;
   margin-bottom: 40px;
   display: inline-block;
+  text-decoration: none;
 }
 
 a {
@@ -128,7 +129,7 @@ a {
 }
 
 a:hover {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 a:active {
@@ -150,12 +151,13 @@ Nav Bar
 ----------------------------*/
 
 .nav-bar {
-  background: #513c47;
+  background: linear-gradient(#513c47, #47353f);
 }
 
 nav {
   text-align: center;
   position: fixed;
+  z-index: 100;
   top: 0;
   width: 100%;
 }
@@ -173,6 +175,14 @@ nav a {
 
 nav a:hover {
   background: #664C59;
+}
+
+.nav-fade {
+  background: linear-gradient(rgba(40, 30, 36, 1), rgba(40, 30, 36, 0));
+  position: fixed;
+  top: 50px;
+  bottom: 85%;
+  width: 100%;
 }
 
 
