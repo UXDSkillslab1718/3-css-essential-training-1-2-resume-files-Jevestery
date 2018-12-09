@@ -22,7 +22,7 @@ html {
 }
 
 body {
-  background: #5F5566;
+  background: #8AEA92;
   font-family: pragmatica, Arial, sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -87,14 +87,6 @@ header h1, header h2 {
 
 header h1 {
     margin: 65px 0 10px 0;
-}
-
-.profile-pic {
-  width: 220px;
-  border: 5px solid white;
-  border-radius: 70px;
-  float: left;
-  margin: 0 50px 50px 0;
 }
 
 header p {
@@ -162,29 +154,9 @@ nav {
   width: 100%;
 }
 
-nav a {
-  display: inline-block;
-  min-width: 170px;
-  padding: 10px 30px;
-  margin: 15px 0;
-  border: 1px #83c6b3 solid;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
 nav a:hover {
   background: #664C59;
 }
-
-.nav-fade {
-  background: linear-gradient(rgba(40, 30, 36, 1), rgba(40, 30, 36, 0));
-  position: fixed;
-  top: 50px;
-  bottom: 85%;
-  width: 100%;
-}
-
 
 /*----------------------------
 Work
@@ -197,10 +169,8 @@ Work
 
 .work {
   background: #83c6b3;
-  width: 50%;
-  float: left;
+  width: 100%;
   padding: 0 50px;
-  min-height: 950px;
 }
 
 .work h3 ~ p {
@@ -222,8 +192,7 @@ Education
 
 .education {
   background: #8AEA92;
-  width: 50%;
-  float: left;
+  width: 100%;
   padding: 0 50px;
   min-height: 950px;
 }
@@ -234,4 +203,77 @@ Education
 
 .education-section p:last-of-type {
   margin-bottom: 50px;
+}
+
+/*----------------------------
+Media Queries
+----------------------------*/
+
+@media (min-width: 950px) {
+  .work {
+    background: #83c6b3;
+    width: 50%;
+    float: left;
+    padding: 0 50px;
+  }
+  .education {
+    background: #8AEA92;
+    width: 50%;
+    float: left;
+    padding: 0 50px;
+    min-height: 950px;
+  }
+}
+
+@media (min-width: 751px) {
+  .profile-pic {
+    width: 220px;
+    border: 5px solid white;
+    border-radius: 70px;
+    float: left;
+    margin: 0 50px 50px 0;
+  }
+  nav a {
+    display: inline-block;
+    min-width: 170px;
+    padding: 10px 30px;
+    margin: 15px 0;
+    border: 1px #83c6b3 solid;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  .nav-fade {
+    background: linear-gradient(rgba(40, 30, 36, 1), rgba(40, 30, 36, 0));
+    position: fixed;
+    top: 50px;
+    bottom: 85%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 750px) {
+  .profile-pic {
+    width: 220px;
+    border: 5px solid white;
+    border-radius: 70px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+  }
+  header h1, header h2 {
+    text-align: center;
+    margin-top: 20px;
+  }
+  nav a {
+    display: inline-block;
+    padding: 5px 30px;
+    margin: 5px 0;
+    border: 1px #83c6b3 solid;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+  }
 }
